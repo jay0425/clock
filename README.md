@@ -28,13 +28,10 @@ Sass(Syntactically Awesome StyleSheets)는 두가지 의미를 지니고 있다.
 출처 :
 
 <br/>
-
 https://www.youtube.com/watch?v=YqmJWF4o700
 
 <br/>
-
 https://www.youtube.com/watch?v=qdah3ve0m7Q
 
 <br/>
-
 https://www.youtube.com/watch?v=k0s0iqfZJa4&t=18s
