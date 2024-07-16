@@ -25,23 +25,21 @@
           <h2 id="current-time"></h2>
         </section>
 
-        <aside>
-          <section id="input-area">
-            <div>
-              <input type="time" id="alarm-input" onkeyup="enterKey()" />
-              <label for="task-label"><span>Alarms</span></label>
-              <button id="set-alarm">
-                <span>add alarms</span>
-              </button>
-            </div>
-            <audio id="alarm-audio" src="/assets/music/alarm.wav" preload="auto"></audio>
-          </section>
+        <section id="input-area">
+          <div>
+            <input type="time" id="alarm-input" />
+            <label for="task-label"><span>Alarms</span></label>
+            <button id="set-alarm">
+              <span>알람 추가하기</span>
+            </button>
+          </div>
+          <audio id="alarm-audio" src="/assets/music/alarm.wav" preload="auto"></audio>
+        </section>
 
-          <section id="alarm-list">
-            <h3>Set Alarms</h3>
-            <ul id="alarms"></ul>
-          </section>
-        </aside>
+        <section id="alarm-list">
+          <h3>알람 리스트</h3>
+          <ul id="alarms"></ul>
+        </section>
       </main>
     </div>
 

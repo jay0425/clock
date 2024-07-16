@@ -1,7 +1,13 @@
+@font-face {
+  font-family: Nanum Pen Script;
+  src: url(/assets/fonts/Nanum_Pen_Script/NanumPenScript-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Nanum Pen Script;
 }
 
 body {
@@ -68,10 +74,58 @@ main {
     }
   }
 
-  aside {
-    #input-area {
+  #input-area {
+    div {
+      display: flex;
+      gap: 1rem;
+      padding-bottom: 2rem;
       label {
         display: none;
+      }
+
+      input {
+        width: 15rem;
+        font-size: 3rem;
+      }
+
+      button {
+        width: 5rem;
+        height: 4rem;
+        background-color: rgb(106, 160, 240);
+        // border-style: none;
+        border-color: rgb(106, 160, 240);
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: rgb(190, 190, 105);
+        border-color: rgb(190, 190, 105);
+      }
+    }
+  }
+
+  #alarm-list {
+    display: flex;
+    flex-direction: column;
+    h3 {
+      font-size: 3rem;
+      padding-bottom: 1.5rem;
+    }
+
+    #alarms {
+      li {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        font-size: 2rem;
+        padding-bottom: 0.8rem;
+      }
+      button {
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: rgb(106, 160, 240);
+        border-color: rgb(106, 160, 240);
+        border-radius: 50%;
       }
     }
   }

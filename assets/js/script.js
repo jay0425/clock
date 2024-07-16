@@ -6,6 +6,10 @@ const setBattery = () => {
     document.getElementById('battery').textContent = `${second}%`;
     second--;
   }
+  if (second < 0) {
+    //0초가 되면 시간 부분이 사라진다.
+    document.getElementById('current-time').remove();
+  }
 };
 
 // 현재 시간을 표시하는 함수
@@ -27,7 +31,7 @@ let alarms = [];
 // 알람을 설정하는 함수
 const setAlarm = () => {
   if (alarms.length >= 3) {
-    alert('You can only set up to 3 alarms.');
+    alert('알람은 3개까지만 설정 가능합니다.');
     return;
   }
 
@@ -79,7 +83,7 @@ const displayAlarms = () => {
     const li = document.createElement('li');
     li.textContent = alarm.time;
     const deleteButton = document.createElement('button');
-    deleteButton.textContent = 'Delete';
+    deleteButton.textContent = '삭제';
     deleteButton.onclick = () => deleteAlarm(index);
     li.appendChild(deleteButton);
     alarmList.appendChild(li);
