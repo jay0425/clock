@@ -17,6 +17,7 @@ body {
   background-color: white;
   padding: 2rem;
   width: 50rem;
+  height: 50rem;
   position: relative;
   top: 50%;
   left: 50%;
@@ -30,17 +31,17 @@ body {
 }
 
 header {
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
   display: flex;
   justify-content: space-between;
   #title {
     padding-left: 5px;
   }
   #charge {
+    width: 4.2rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    gap: 0.5rem;
     i {
       color: limegreen;
     }
@@ -48,11 +49,39 @@ header {
 }
 
 main {
-  section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  #now {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #current-date {
+      font-size: 4rem;
+      padding-bottom: 2rem;
+    }
+    #current-time {
+      font-size: 4rem;
+      padding-bottom: 2rem;
+    }
+  }
+
+  aside {
+    #input-area {
+      label {
+        display: none;
+      }
+    }
+    #alarm-area {
+      #task-tabs {
+        display: flex;
+
+        .tab {
+          padding-left: 2rem;
+        }
+      }
+    }
   }
 }
-
-aside {
-}
-
-// ----------------------------------------------------

@@ -11,44 +11,47 @@
     <div id="container">
       <header>
         <div id="title">
-          <h1>알람 시계</h1>
+          <h1>Alarm Clock 🐓</h1>
         </div>
         <div id="charge">
           <i class="fa-solid fa-battery-full fa-xl"></i>
-          100%
+          <span id="battery">100%</span>
         </div>
       </header>
 
       <main>
-        <section>
-          <div id="current-time"></div>
-          <div>
-            <input type="time" id="alarm-time" />
-            <button id="set-alarm">Set Alarm</button>
-          </div>
-          <audio id="alarm-audio" src="/assets/music/alarm.wav" preload="auto"></audio>
+        <section id="now">
+          <h2 id="current-date"></h2>
+          <h2 id="current-time"></h2>
         </section>
+
+        <aside>
+          <section id="input-area">
+            <div>
+              <input type="time" id="alarm-input" onkeyup="enterKey()" />
+              <label for="task-label"><span>Alarms</span></label>
+              <button id="set-alarm">
+                <span>add alarms</span>
+              </button>
+            </div>
+            <audio id="alarm-audio" src="/assets/music/alarm.wav" preload="auto"></audio>
+          </section>
+
+          <section id="alarm-area">
+            <div id="task-tabs">
+              <div id="under-line"></div>
+              <div class="tab" id="all">All</div>
+              <div class="tab" id="ongoing">not Done</div>
+              <div class="tab" id="done">Done</div>
+            </div>
+            <div id="task-board"></div>
+          </section>
+          <section id="alarm-list">
+            <h3>Set Alarms</h3>
+            <ul id="alarms"></ul>
+          </section>
+        </aside>
       </main>
-
-      <aside>
-        <section id="input-area">
-          <input type="text" id="task-input" onkeyup="enterKey()" />
-          <label for="task-label"><span>알람들</span></label>
-          <button id="add-button">
-            <span>알람 추가하기</span>
-          </button>
-        </section>
-
-        <section id="alarm-area">
-          <div class="task-tabs">
-            <div id="under-line"></div>
-            <div class="tab" id="all">All</div>
-            <div class="tab" id="ongoing">not Done</div>
-            <div class="tab" id="done">Done</div>
-          </div>
-          <div id="task-board"></div>
-        </section>
-      </aside>
     </div>
 
     <script src="/assets/js/script.js"></script>
