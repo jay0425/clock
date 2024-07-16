@@ -45,16 +45,16 @@ const setAlarm = () => {
     if (timeToAlarm >= 0) {
       const alarmId = setTimeout(() => {
         document.getElementById('alarm-audio').play();
-        alert('Alarm is ringing!');
+        alert('꼬끼오~!!!🐔 알람이 울립니다!! 소리 주의!!!');
         deleteAlarmById(alarmId);
       }, timeToAlarm);
       alarms.push({ time: alarmTime, id: alarmId });
       displayAlarms();
     } else {
-      alert('Please set a time in the future.');
+      alert('현재보다 미래의 시간을 입력해주세요.');
     }
   } else {
-    alert('Please set a valid time.');
+    alert('유효한 시간을 입력해주세요.');
   }
 };
 
