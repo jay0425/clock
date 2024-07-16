@@ -8,19 +8,20 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url('images/background.jpg');
+  background-image: url('/assets/images/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .container {
-  background-color: pink;
+  background-color: white;
   width: 50rem;
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 10px;
 }
 
