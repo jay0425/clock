@@ -15,13 +15,15 @@ Sass(Syntactically Awesome StyleSheets)는 두가지 의미를 지니고 있다.
   - visual studio code 확장 기능: Live Sass Compiler
     -> Sass 또는 SCSS 구문으로 작성된 코드를 실시간으로 모니터링하여 즉각적으로 css 파일로 빌드 해준다.
   - 명령행 인터페이스 : (node.js 가 먼저 설치 되어 있어야 한다.)
+  ```bash
   1. npm install -g sass
   2. sass --version
   3. style 폴더 안에 main.scss 파일을 만든다.
   4. sass style/main.scss:style/main.css
   5. sass --watch style/main.scss:style/main.css (live 실행)
   6. 터미널에서 ctrl + c (live 실행 중단)
-  7. sass --watch --style compressed style/main.scss:style/main.css (css파일 압축)
+  7. sass --watch --style compressed assets/css/style.scss:assets/css/style.css (최종코드)(css파일 압축)
+  ```
 
 <hr>
 
